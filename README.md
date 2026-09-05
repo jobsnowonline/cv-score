@@ -9,10 +9,12 @@ A free, serverless **CV ↔ job match scorer**. POST a resume and a job descript
 | `/` | GET | API info + health check |
 | `/score` | POST | Score a CV against a job description |
 
+**Live instance:** <https://cv-score.wildaccount.workers.dev>
+
 ### Request
 
 ```bash
-curl -X POST https://cv-score.<your-subdomain>.workers.dev/score \
+curl -X POST https://cv-score.wildaccount.workers.dev/score \
   -H "Content-Type: application/json" \
   -d '{"cvText": "Jane Doe, react developer, 5 years typescript...", "jobText": "We are hiring a React Developer..."}'
 ```
