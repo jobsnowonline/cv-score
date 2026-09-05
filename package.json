@@ -1,0 +1,21 @@
+{
+  "name": "cv-score",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Free CV ↔ job match scoring API — paste a resume and a job description, get a fit score with matched and missing keywords.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit",
+    "types": "wrangler types",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0",
+    "vitest": "^3.2.0",
+    "wrangler": "^4.30.0"
+  }
+}
